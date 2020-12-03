@@ -27,25 +27,25 @@ const SideBar = props => {
       styles={{ root: { width: 200, padding: `${spacing.s1}` } }}
       gap={spacing.l1}
     >
-      <Text variant={'large'}>Types</Text>
+      <Text variant={'large'}>类型</Text>
       <Stack>
         <FilterItem
-          text='All'
+          text='所有'
           selected={type === TYPE_ENUM.ALL}
           onChange={changeFilter(TYPE_ENUM.ALL)}
         />
         <FilterItem
-          text='Data Template'
+          text='数据模板'
           selected={type === TYPE_ENUM.DATA_TEMPLATE}
           onChange={changeFilter(TYPE_ENUM.DATA_TEMPLATE)}
         />
         <FilterItem
-          text='Job Template'
+          text='任务模板'
           selected={type === TYPE_ENUM.JOB_TEMPLATE}
           onChange={changeFilter(TYPE_ENUM.JOB_TEMPLATE)}
         />
         <FilterItem
-          text='Old Example'
+          text='旧的模板'
           selected={type === TYPE_ENUM.OLD_TEMPLATE}
           onChange={changeFilter(TYPE_ENUM.OLD_TEMPLATE)}
         />

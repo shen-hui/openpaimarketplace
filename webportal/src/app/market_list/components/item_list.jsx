@@ -41,7 +41,7 @@ const ItemList = props => {
       {!loading && (
         <Stack gap={spacing.m}>
           <Text variant={'xxLarge'}>
-            {isNil(type) ? 'All' : capitalize(type)}
+            {isNil(type) ? '所有' : capitalize(type)}
           </Text>
           <HorizontalLine />
           <GridWrapper>
